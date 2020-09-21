@@ -1,0 +1,94 @@
+<html>
+<head>
+<link rel="stylesheet" href="mystyle3.css">
+<script > 
+function checking() 
+{ 
+if (join.SN.value == "") 
+{ 
+alert("Please enter your SuperHero name!"); 
+join.sn.focus(); 
+return false; 
+} 
+
+if (join.RN.value == "") 
+{ 
+alert("Please enter your Real Name!"); 
+join.RN.focus(); 
+return false; 
+}
+if (join.LI.value=="")
+{
+alert("Please enter your address!"); 
+join.LI.focus(); 
+return false; 
+}	
+if (join.OP.value=="")
+{
+alert("Please enter your power!"); 
+join.OP.focus(); 
+return false; 
+	
+}
+if (join.ST.value=="")
+{
+alert("Please enter your strength!"); 
+join.ST.focus(); 
+return false; 
+}
+
+if (join.EM.value == "") 
+{ 
+alert("Please enter a valid e-mail address."); 
+join.EM.focus(); 
+return false; 
+} 
+if (join.EM.value.indexOf("@", 0) < 0) 
+{ 
+alert("Please enter a valid e-mail address."); 
+join.EM.focus(); 
+return false; 
+} 
+
+if (join.EM.value.indexOf(".", 0) < 0) 
+{ 
+alert("Please enter a valid e-mail address."); 
+join.EM.focus(); 
+return false; 
+} 
+
+if (join.RA.value == "") 
+{ 
+alert("Please enter your achievements!"); 
+join.RA.focus(); 
+return false; 
+} 
+
+if (join.SC.value == "") 
+{ 
+alert("Please enter your SuperHero Code!"); 
+join.SC.focus(); 
+return false; 
+} 
+}
+</script>
+</head>
+<body>
+<img class="Iamg" src="C:\Users\Sanchi Patel\Desktop\Marvel\background3.jpg"></img>
+</div>
+<div class="resume">
+<h2 ALIGN="CENTER">SuperHero Resume</h2>
+<form method="post" name="join">
+<input type="text" placeholder="SuperHero Name" name="SN">
+<input type="text" placeholder="Real Name" name="RN">
+<input type="text" placeholder="Living In" name="LI">
+<textarea rows="4" cols="50" placeholder="One power that defines you" name="OP"></textarea>
+<textarea rows="4" cols="50" placeholder="Strengths" name="ST"></textarea>
+<input type="text" placeholder="Email" name="EM">
+<textarea rows="4" cols="50" placeholder="Recent Achievements" name="RA"></textarea>
+<input type="password" placeholder="SuperHero Code" name="SC" min="4">
+<button onclick="checking()" formaction="">Join!</button>
+</form>
+</div>
+</body>
+</html>
